@@ -7,8 +7,8 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   const config = new DocumentBuilder()
-    .setTitle('Tasks app')
-    .setDescription('The tasks app')
+    .setTitle('Acoounts app')
+    .setDescription('The account manager app')
     .setVersion('1.0')
     .build();
 

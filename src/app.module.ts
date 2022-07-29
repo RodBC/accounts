@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
 import { UsersModule } from './users/users.module';
 import { TypeOrmModule } from '@nestjs/typeorm'
+import { ChangePassModule } from './change-pass/change-pass.module';
 
 @Module({
   imports: [
@@ -13,6 +14,7 @@ import { TypeOrmModule } from '@nestjs/typeorm'
       password:'postgres',
       autoLoadEntities:true,
     }),
+    ChangePassModule,
 
   ],
 })
