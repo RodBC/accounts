@@ -1,10 +1,9 @@
 import { Injectable } from '@nestjs/common';
-import { CreateChangePassDto } from './dto/create-change-pass.dto';
-import { UpdateChangePassDto } from './dto/update-change-pass.dto';
+import { ChangePassDto } from './dto/change-pass.dto';
 
 @Injectable()
 export class ChangePassService {
-  create(createChangePassDto: CreateChangePassDto) {
+  create(createChangePassDto: ChangePassDto) {
     return 'This action adds a new changePass';
   }
 
@@ -16,11 +15,4 @@ export class ChangePassService {
     return `This action returns a #${id} changePass`;
   }
 
-  update(id: number, updateChangePassDto: UpdateChangePassDto) {
-    return `This action updates a #${id} changePass`;
-  }
-
-  remove(id: number) {
-    return `This action removes a #${id} changePass`;
-  }
 }
